@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "eight-ball-mod",
+	"version": "${version}",
+	"name": "Eight Ball Mod",
+	"description": "Eight Ball Mode",
+	"authors": [
+		"Kelly Setzer"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/eight-ball-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.liquidchicken.eightballmod.EightBallMod"
+		],
+		"fabric-datagen": [
+			"org.liquidchicken.eightballmod.EightBallModDataGenerator"
+		],
+		"client": [
+			"org.liquidchicken.eightballmod.EightBallModClient"
+		]
+	},
+	"mixins": [
+		"eight-ball-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
