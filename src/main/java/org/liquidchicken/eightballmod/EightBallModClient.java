@@ -6,6 +6,6 @@ public class EightBallModClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-
+        // here
     }
 }
